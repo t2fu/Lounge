@@ -19,6 +19,8 @@
  
  #footer{
      background-color: #333333;
+     padding: 40px;
+     color: white;
      text-align: center;
      position: relative;
      height: 100px;

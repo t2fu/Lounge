@@ -56,14 +56,6 @@ section:after {
   clear: both;
 }
   
-.main-container {
-  min-height: 100vh; /* will cover the 100% of viewport */
-  overflow: hidden;
-  display: block;
-  position: relative;
-  padding-bottom: 100px; /* height of your footer */
-}
-
 footer {
   background-color: #333333;
   text-align: center;
@@ -102,12 +94,12 @@ footer {
     height: auto;
   }
 }
-
    
 </style>
 </head>
 <body style="margin:0;">
-<div class=”main-container”>
+<div id="container">
+<div id="main">
 <header>
   <h2 style = "font-family:Copperplate;">Welcome to Lounge</h2>
 </header>
@@ -130,12 +122,13 @@ footer {
    
   </article>
 </section>
-<footer>
+</div>
+</div>
+<footer id="footer">
   <a target="_self" href="https://www.facebook.com/profile.php?id=100007079986448"><i class="fab fa-facebook fa-5x fa-fw fa-fw fa-fw fa-fw"></i></a>
   <a target="_self" href="https://snapchat.com/add/tianxdfu"><i class="fab fa-snapchat fa-5x fa-fw fa-fw"></i></a>
   <a target="_self" href="https://github.com/t2fu"><i class="fab fa-github fa-5x fa-fw fa-fw"></i></a>
   <a target="_self" href="https://www.linkedin.com/in/tiancheng-fu-b67194156"><i class="fab fa-linkedin fa-5x fa-fw"></i></a>
 </footer>
-</div>
 </body>
 </html>

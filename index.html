@@ -3,7 +3,7 @@
 <head>
   <script src="https://kit.fontawesome.com/26517c8f06.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
-  <script src="./js/app.js" defer></script>
+  <script src="app.js" defer></script>
    <base target="_blank">
 <title>OC Lounge</title>
 <meta charset="utf-8">
@@ -131,6 +131,28 @@ section:after {
    
   </article>
 </section>
+<div id="app">
+<section>
+    <h1>comment</h1>
+    <div class="comment">
+    <div class="comments" v-for="comments in comment">
+    <h3>{{username}}</h3>
+    <p>{{comments}}</p>
+    </div>
+    </div>
+</section>
+<section>
+    <h2>Add a Comment</h2>
+      <label for="Username">Username</label>
+      <input type="text" value="username" placeholder="Username" v-model="username" />
+      <br>
+      <label for="comments">New Comment</label>
+        <input type="text" placeholder="New Comment" v-model="newComment"/>
+        <br>
+        <button v-on:click="comment.push(newComment)">Add Comment</button>    
+        <br>
+</section>
+</div>
 </div>
 </div>
 <footer id="footer">

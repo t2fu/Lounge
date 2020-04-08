@@ -95,7 +95,18 @@ section:after {
 .fa-linkedin {
   color: #007bb5;
 }
-/* Responsive layout*/
+.comment_body {
+	display: inline-block;
+	vertical-align: middle;
+	width: calc(100% - 75px);
+    min-height: 65px;
+	margin-left: 10px;
+	padding: 5px 10px;
+	font-size: .9rem;
+	color: #555;
+	background-color: #FFFFFF;
+	border-bottom: 2px solid #D3D3D3;
+}
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
@@ -134,12 +145,16 @@ section:after {
 <div id="app">
 <section>
     <h1>comment</h1>
+    
     <div class="comment">
     <div class="comments" v-for="comments in comment">
     <h3>{{username}}</h3>
+    <div class="comment_body">
     <p>{{comments}}</p>
     </div>
     </div>
+    </div>
+    
 </section>
 <section>
     <h2>Add a Comment</h2>

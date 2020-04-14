@@ -3,7 +3,7 @@ const app = new Vue({
   data: {
       username: 'PLAYER1',
       comment: ['this is LMAO','LMAO','LOL']
-  }
+  },
   computed: {
   
   

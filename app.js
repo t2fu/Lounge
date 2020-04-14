@@ -1,7 +1,7 @@
 const app = new Vue({
   el: '#app',
   data: {
-      username: ['PLAYER1','TESTME2','GG GUYS'],
+      username: 'PLAYER1',
       comment: ['this is LMAO','LMAO','LOL']
   }
   computed: {
